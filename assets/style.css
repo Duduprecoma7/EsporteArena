@@ -1,0 +1,175 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f4f4f4;
+}
+
+header{
+
+    background:#1B5E20;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:20px 80px;
+
+}
+
+.logo{
+
+    color:white;
+
+    font-size:28px;
+
+    font-weight:bold;
+
+}
+
+nav ul{
+
+    list-style:none;
+
+    display:flex;
+
+}
+
+nav ul li{
+
+    margin-left:30px;
+
+}
+
+nav ul li a{
+
+    text-decoration:none;
+
+    color:white;
+
+    font-size:18px;
+
+    transition:0.3s;
+
+}
+
+nav ul li a:hover{
+
+    color:#FFD54F;
+
+}
+
+.banner{
+
+    text-align:center;
+
+    padding:100px;
+
+    background:white;
+
+}
+
+.banner h1{
+
+    font-size:50px;
+
+    color:#1B5E20;
+
+}
+
+.banner p{
+
+    margin:20px;
+
+    font-size:20px;
+
+}
+
+.botao{
+
+    display:inline-block;
+
+    padding:15px 40px;
+
+    background:#1B5E20;
+
+    color:white;
+
+    text-decoration:none;
+
+    border-radius:10px;
+
+    transition:0.3s;
+
+}
+
+.botao:hover{
+
+    background:#2E7D32;
+
+}
+
+.quadras{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:30px;
+
+    margin:50px;
+
+}
+
+.card{
+
+    width:300px;
+
+    background:white;
+
+    padding:25px;
+
+    border-radius:15px;
+
+    box-shadow:0px 0px 10px rgba(0,0,0,0.2);
+
+    text-align:center;
+
+}
+
+.vantagens{
+
+    text-align:center;
+
+    padding:50px;
+
+}
+
+.contato{
+
+    text-align:center;
+
+    padding:50px;
+
+    background:white;
+
+}
+
+footer{
+
+    background:#1B5E20;
+
+    color:white;
+
+    text-align:center;
+
+    padding:20px;
+
+}
+

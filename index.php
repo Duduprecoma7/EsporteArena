@@ -1,6 +1,6 @@
 <?php
 
-include("../config/conexao.php");
+include("config/conexao.php");
 
 ?>
 
@@ -25,7 +25,7 @@ include("../config/conexao.php");
 
         <div class="logo">
 
-            <h2>Arena Sports</h2>
+            Arena Sports
 
         </div>
 
@@ -35,11 +35,11 @@ include("../config/conexao.php");
 
                 <li><a href="#">Home</a></li>
 
-                <li><a href="#">Quadras</a></li>
+                <li><a href="#quadras">Quadras</a></li>
 
-                <li><a href="#">Agendar</a></li>
+                <li><a href="#contato">Contato</a></li>
 
-                <li><a href="#">Contato</a></li>
+                <li><a href="agendamentos/cadastrar.php">Agendar</a></li>
 
                 <li><a href="login/login.php">Login</a></li>
 
@@ -51,69 +51,113 @@ include("../config/conexao.php");
 
     <section class="banner">
 
-        <h1>Agende sua Quadra Online</h1>
+        <h1>Reserve sua Quadra em Minutos</h1>
 
-        <p>Reserve Quadras de Areia e Campo Society de forma rápida e segura.</p>
+        <p>
 
-        <a href="#" class="botao">Reservar Agora</a>
+            Agende sua Quadra de Areia ou Campo Society de forma rápida,
+
+            segura e totalmente online.
+
+        </p>
+
+        <a href="agendamentos/cadastrar.php" class="botao">
+
+            Agendar Agora
+
+        </a>
 
     </section>
 
-    <section class="quadras">
+    <section id="quadras">
 
         <h2>Nossas Quadras</h2>
 
-        <div class="card">
+        <div class="quadras">
 
-            <h3>🏖 Quadra de Areia</h3>
+            <div class="card">
 
-            <p>Ideal para vôlei, beach tennis e futevôlei.</p>
+                <h3>🏖 Quadra de Areia</h3>
 
-        </div>
+                <p>
 
-        <div class="card">
+                    Ideal para Beach Tennis,
 
-            <h3>⚽ Campo Society</h3>
+                    Futevôlei e Vôlei de Areia.
 
-            <p>Campo com grama sintética e iluminação.</p>
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <h3>⚽ Campo Society</h3>
+
+                <p>
+
+                    Campo Society com grama sintética,
+
+                    iluminação LED e vestiários.
+
+                </p>
+
+            </div>
 
         </div>
 
     </section>
 
-    <section class="vantagens">
+    <section class="leads">
 
-        <h2>Por que escolher a Arena Sports?</h2>
+        <div class="lead-box">
 
-        <ul>
+            <h2>Receba Promoções Exclusivas</h2>
 
-            <li>✔ Agendamento rápido</li>
+            <p>
+                Cadastre-se para receber descontos, novidades e horários promocionais.
+            </p>
 
-            <li>✔ Estrutura moderna</li>
+            <form action="leads/salvar.php" method="POST">
 
-            <li>✔ Horários flexíveis</li>
+                <input type="text" name="nome" placeholder="Seu nome" required>
 
-            <li>✔ Atendimento de qualidade</li>
+                <input type="email" name="email" placeholder="Seu melhor e-mail" required>
 
-        </ul>
+                <input type="text" name="telefone" placeholder="Telefone" required>
+
+                <button type="submit">
+
+                    Quero Receber Promoções
+
+                </button>
+
+            </form>
+
+        </div>
 
     </section>
 
-    <section class="contato">
+    <section id="contato" class="contato">
 
-        <h2>Contato</h2>
+        <h2>Entre em Contato</h2>
 
-        <p>WhatsApp: (41) 99999-9999</p>
+        <p>📱 WhatsApp: (41) 99999-9999</p>
 
-        <p>Email: contato@arenasports.com</p>
+        <p>📧 contato@arenasports.com</p>
 
-        <p>Instagram: @arenasports</p>
+        <p>📍 Rua arenasports, 123 - Curitiba/PR</p>
+
+        <p>📷 Instagram: @arenasports</p>
 
     </section>
 
     <footer>
 
-        <p>© 2026 Arena Sports - Todos os direitos reservados.</p>
+        <p>
+
+            © 2026 Arena Sports - Todos os direitos reservados.
+
+        </p>
 
     </footer>
 

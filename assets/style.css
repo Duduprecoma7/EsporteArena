@@ -1,175 +1,442 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Arial, Helvetica, sans-serif;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-body{
-    background:#f4f4f4;
+body {
+    background: #eef2f7;
+    color: #333;
 }
 
-header{
+header {
 
-    background:#1B5E20;
+    background: linear-gradient(90deg, #2563eb, #4f46e5, #7c3aed);
 
-    display:flex;
+    display: flex;
 
-    justify-content:space-between;
+    justify-content: space-between;
 
-    align-items:center;
+    align-items: center;
 
-    padding:20px 80px;
+    padding: 20px 80px;
 
-}
+    position: sticky;
 
-.logo{
+    top: 0;
 
-    color:white;
+    z-index: 1000;
 
-    font-size:28px;
-
-    font-weight:bold;
-
-}
-
-nav ul{
-
-    list-style:none;
-
-    display:flex;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, .15);
 
 }
 
-nav ul li{
+.logo {
 
-    margin-left:30px;
+    color: white;
 
-}
+    font-size: 32px;
 
-nav ul li a{
+    font-weight: bold;
 
-    text-decoration:none;
-
-    color:white;
-
-    font-size:18px;
-
-    transition:0.3s;
+    letter-spacing: 1px;
 
 }
 
-nav ul li a:hover{
+nav ul {
 
-    color:#FFD54F;
+    list-style: none;
 
-}
-
-.banner{
-
-    text-align:center;
-
-    padding:100px;
-
-    background:white;
+    display: flex;
 
 }
 
-.banner h1{
+nav ul li {
 
-    font-size:50px;
-
-    color:#1B5E20;
+    margin-left: 30px;
 
 }
 
-.banner p{
+nav ul li a {
 
-    margin:20px;
+    text-decoration: none;
 
-    font-size:20px;
+    color: white;
 
-}
+    font-size: 18px;
 
-.botao{
+    font-weight: 500;
 
-    display:inline-block;
-
-    padding:15px 40px;
-
-    background:#1B5E20;
-
-    color:white;
-
-    text-decoration:none;
-
-    border-radius:10px;
-
-    transition:0.3s;
+    transition: .3s;
 
 }
 
-.botao:hover{
+nav ul li a:hover {
 
-    background:#2E7D32;
-
-}
-
-.quadras{
-
-    display:flex;
-
-    justify-content:center;
-
-    gap:30px;
-
-    margin:50px;
+    color: #ffd43b;
 
 }
 
-.card{
 
-    width:300px;
+.banner {
 
-    background:white;
+    text-align: center;
 
-    padding:25px;
+    padding: 120px 20px;
 
-    border-radius:15px;
+    background: linear-gradient(135deg, #2563eb, #4f46e5, #7c3aed);
 
-    box-shadow:0px 0px 10px rgba(0,0,0,0.2);
-
-    text-align:center;
+    color: white;
 
 }
 
-.vantagens{
+.banner h1 {
 
-    text-align:center;
+    font-size: 58px;
 
-    padding:50px;
-
-}
-
-.contato{
-
-    text-align:center;
-
-    padding:50px;
-
-    background:white;
+    margin-bottom: 20px;
 
 }
 
-footer{
+.banner p {
 
-    background:#1B5E20;
+    font-size: 22px;
 
-    color:white;
-
-    text-align:center;
-
-    padding:20px;
+    margin-bottom: 40px;
 
 }
 
+
+.botao {
+
+    display: inline-block;
+
+    padding: 16px 40px;
+
+    background: white;
+
+    color: #4f46e5;
+
+    text-decoration: none;
+
+    border-radius: 50px;
+
+    font-size: 18px;
+
+    font-weight: bold;
+
+    transition: .3s;
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, .2);
+
+}
+
+.botao:hover {
+
+    transform: translateY(-5px);
+
+    background: #f3f4f6;
+
+}
+
+
+section h2 {
+
+    text-align: center;
+
+    font-size: 38px;
+
+    margin-bottom: 40px;
+
+    color: #374151;
+
+}
+
+
+.quadras {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 35px;
+
+    padding: 70px 20px;
+
+    flex-wrap: wrap;
+
+}
+
+
+.card {
+
+    width: 320px;
+
+    background: white;
+
+    border-radius: 20px;
+
+    padding: 30px;
+
+    text-align: center;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, .1);
+
+    transition: .4s;
+
+}
+
+.card:hover {
+
+    transform: translateY(-10px);
+
+    box-shadow: 0 20px 40px rgba(0, 0, 0, .2);
+
+}
+
+.card h3 {
+
+    font-size: 26px;
+
+    margin-bottom: 15px;
+
+    color: #4f46e5;
+
+}
+
+.card p {
+
+    color: #555;
+
+    line-height: 1.6;
+
+}
+
+
+.vantagens {
+
+    padding: 70px 20px;
+
+    background: #ffffff;
+
+}
+
+.vantagens ul {
+
+    max-width: 600px;
+
+    margin: auto;
+
+    list-style: none;
+
+}
+
+.vantagens li {
+
+    padding: 15px;
+
+    margin: 12px 0;
+
+    background: #f8fafc;
+
+    border-left: 6px solid #4f46e5;
+
+    border-radius: 10px;
+
+    font-size: 18px;
+
+}
+
+
+.contato {
+
+    background: #eef2ff;
+
+    padding: 70px 20px;
+
+    text-align: center;
+
+}
+
+.contato p {
+
+    margin: 15px;
+
+    font-size: 18px;
+
+}
+
+
+footer {
+
+    background: linear-gradient(90deg, #2563eb, #4f46e5, #7c3aed);
+
+    color: white;
+
+    text-align: center;
+
+    padding: 25px;
+
+    font-size: 16px;
+
+}
+
+
+@media(max-width:768px) {
+
+    header {
+
+        flex-direction: column;
+
+        padding: 20px;
+
+    }
+
+    nav ul {
+
+        flex-direction: column;
+
+        text-align: center;
+
+        margin-top: 20px;
+
+    }
+
+    nav ul li {
+
+        margin: 10px 0;
+
+    }
+
+    .banner h1 {
+
+        font-size: 38px;
+
+    }
+
+    .banner p {
+
+        font-size: 18px;
+
+    }
+
+    .quadras {
+
+        flex-direction: column;
+
+        align-items: center;
+
+    }
+
+    .card {
+
+        width: 90%;
+
+    }
+
+}
+
+/* ===========================
+CAPTURA DE LEADS
+=========================== */
+
+.leads {
+
+    padding: 80px 20px;
+
+    background: linear-gradient(135deg, #2563eb, #4f46e5, #7c3aed);
+
+    display: flex;
+
+    justify-content: center;
+
+}
+
+.lead-box {
+
+    background: white;
+
+    width: 700px;
+
+    padding: 40px;
+
+    border-radius: 20px;
+
+    text-align: center;
+
+    box-shadow: 0 15px 40px rgba(0, 0, 0, .2);
+
+}
+
+.lead-box h2 {
+
+    color: #4f46e5;
+
+    margin-bottom: 15px;
+
+}
+
+.lead-box p {
+
+    color: #555;
+
+    margin-bottom: 30px;
+
+}
+
+.lead-box form {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 18px;
+
+}
+
+.lead-box input {
+
+    padding: 15px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 10px;
+
+    font-size: 16px;
+
+}
+
+.lead-box input:focus {
+
+    outline: none;
+
+    border: 2px solid #4f46e5;
+
+}
+
+.lead-box button {
+
+    background: linear-gradient(90deg, #2563eb, #4f46e5);
+
+    color: white;
+
+    border: none;
+
+    padding: 16px;
+
+    font-size: 18px;
+
+    border-radius: 10px;
+
+    cursor: pointer;
+
+    transition: .3s;
+
+}
+
+.lead-box button:hover {
+
+    transform: scale(1.03);
+
+}

@@ -275,16 +275,11 @@ $resultAgendamentos = mysqli_query($conexao, $sqlAgendamentos);
 
             <li><a href="clientes/listar.php"> Clientes</a></li>
 
-            <li><a href="leads/listar.php">Leads</a></li>
-
-            <li><a href="quadras/listar.php">Quadras</a></li>
-
             <li><a href="login/logout.php"> Sair</a></li>
 
         </ul>
 
     </div>
-
     <div class="main">
 
         <h1>Dashboard</h1>
@@ -326,72 +321,72 @@ $resultAgendamentos = mysqli_query($conexao, $sqlAgendamentos);
         </div>
 
         <br><br>
-    
+
         <h2>Agendamentos</h2>
-    
+
         <table>
-    
+
             <tr>
-    
+
                 <th>Cliente</th>
-    
+
                 <th>Quadra</th>
-    
+
                 <th>Data</th>
-    
+
                 <th>Hora</th>
-    
+
                 <th>Duração</th>
-    
+
                 <th>Ações</th>
-    
+
             </tr>
-    
+
             <?php
-    
+
             while ($agendamento = mysqli_fetch_assoc($resultAgendamentos)) {
-    
+
                 ?>
-    
+
                 <tr>
-    
+
                     <td><?php echo $agendamento['cliente']; ?></td>
-    
+
                     <td><?php echo $agendamento['quadra']; ?></td>
-    
+
                     <td><?php echo date("d/m/Y", strtotime($agendamento['data'])); ?></td>
-    
+
                     <td><?php echo substr($agendamento['hora'], 0, 5); ?></td>
-    
+
                     <td><?php echo $agendamento['duracao']; ?>h</td>
-    
+
                     <td>
-    
+
                         <a href="agendamentos/editar.php?id=<?php echo $agendamento['id']; ?>">
-    
+
                             Editar
-    
+
                         </a>
-    
+
                         |
-    
+
                         <a onclick="return confirm('Deseja excluir este agendamento?')"
                             href="agendamentos/excluir.php?id=<?php echo $agendamento['id']; ?>">
-    
+
                             Excluir
-    
+
                         </a>
-    
+
                     </td>
-    
+
                 </tr>
-    
+
                 <?php
-    
+
             }
-    
+
             ?>
-    
+
         </table>
     </div>
 
